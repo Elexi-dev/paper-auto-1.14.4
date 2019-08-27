@@ -1,7 +1,7 @@
 # paper-auto-update
 This allows paper to auto update through a .sh script automatically. 
+This repo also includes the ptero egg which is what it is designed for. 
 
-The main file is the install file. Apon installing your server run this script. It will install the needed dependencies. 
+The script is included with the egg and does its thing automaticlly. 
 
-This install file is designed to work with a ptero egg which is included in the repo.
 Suggestions are welcome and probably needed.
