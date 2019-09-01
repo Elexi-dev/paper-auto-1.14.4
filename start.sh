@@ -1,9 +1,7 @@
 #!/bin/bash
-#Check for Updates
 #https://github.com/Elexi-dev/paper-auto-1.14.4
-git checkout master
-git stash
-git pull
-git stash pop --quiet
+#Check for Updates
+sh updatescript/updatething.sh
 #Start Server
-java -Xms128M -Xmx${SERVER_MEMORY}M -Dterminal.jline=false -Dterminal.ansi=true -jar paper.jar
+current=`cat updatescript/currentversion.txt`
+java -Xms128M -Xmx${SERVER_MEMORY}M -Dterminal.jline=false -Dterminal.ansi=true -jar paper-${current}.jar
